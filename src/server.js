@@ -10,6 +10,7 @@ app.get("/health", (req, res) => {
     status: "UP",
     message: "Backend is working",
     currentTime: new Date().toLocaleTimeString("en-US", {
+      timeZone: "Asia/Kolkata",
       hour: "2-digit",
       minute: "2-digit",
       second: "2-digit",
